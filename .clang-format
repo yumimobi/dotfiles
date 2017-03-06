@@ -1,0 +1,19 @@
+# Build your own clang-format here https://clangformat.com/
+# 
+ 
+# http://llvm.org/docs/CodingStandards.html
+BasedOnStyle: LLVM
+
+# These are self-explanatory
+IndentWidth: 4
+ColumnLimit: 120
+ObjCBlockIndentWidth: 4
+AllowShortFunctionsOnASingleLine: None
+ConstructorInitializerAllOnOneLineOrOnePerLine: false
+IndentCaseLabels: true
+
+# Line break before curly brackets for class and method definitions
+BreakBeforeBraces: Attach
+
+# @property (nonatomic) instead of @property(nonatomic)
+ObjCSpaceAfterProperty: true

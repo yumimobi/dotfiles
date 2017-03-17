@@ -2,7 +2,7 @@
 if [ "$1" == "fix" ]
 then
     echo "Fixing Clang Format..."
-    find ./ -name "*.[hm]" -exec clang-format -i -style=file "{}" \;
+    find ./ -path .//Example/Pods -prune -o -name "*.[hm]" -exec clang-format -i -style=file "{}" \;
 else
     echo "Checking Clang Format..."
     find ./ -path .//Example/Pods -prune -o -name "*.[hm]" -exec clang-format -style=file -output-replacements-xml "{}" \; | grep "<replacement " >/dev/null

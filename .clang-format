@@ -7,7 +7,9 @@ BasedOnStyle: LLVM
 IndentWidth: 4
 ColumnLimit: 120
 ObjCBlockIndentWidth: 4
-AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: false
+MaxEmptyLinesToKeep: 1
 ConstructorInitializerAllOnOneLineOrOnePerLine: false
 IndentCaseLabels: true
 BreakBeforeBraces: Attach
